@@ -11,6 +11,11 @@ const config: Config = {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        headerYellow: "#fffde9",
+        body: "#03152e",
+        bluegrey: "#607D8B",
+        darkblue: "#243445",
+        transper: "rgba(255, 255, 255, 0.3)",
       },
     },
   },
