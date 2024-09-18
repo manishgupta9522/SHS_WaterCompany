@@ -1,10 +1,8 @@
 "use client";
-
-import Link from "next/link";
 import { useState } from "react";
 import { FiMenu } from "react-icons/fi";
 
-const page = () => {
+const Page = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const toggleMenu = () => {
@@ -41,4 +39,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;
