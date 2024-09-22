@@ -7,7 +7,6 @@ const page = () => {
         <img
           src="water.gif"
           alt="logo"
-          //   style={{ height: "540px" }}
           className="w-full absolute z-0 h-full"
         />
         <div className="flex items-center justify-center absolute inset-0 z-10 text-white text-center font-black text-3xl ">

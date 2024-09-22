@@ -2,21 +2,19 @@ import React from "react";
 
 const page = () => {
   return (
-    <div className="w-full bg-body text-white h-[520px] ">
-      <div className="flex flex-row justify-between">
-        <div className="w-1/2 p-40">
-          <div className="text-6xl font-black">WHO ARE WE</div>
-          <div className="text-slate-500 pt-7 pl-5">
-            SHS is a water treatment company Established in the year 1998. SHS
-            is a water treatment company Established in the year 1998.SHS is a
-            water treatment company Established in the year 1998.
+    <div className="w-full bg-body text-white h-530 p-40">
+      <div className="flex flex-row gap-40 ">
+        <div className="w-1/2 grid grid-cols-1">
+          <div className="font-black text-3xl pb-7">WHO ARE WE</div>
+          <div className="text-slate-500">
+            SHS is a water treatment company Established in the year 1998.
           </div>
         </div>
-        <div className="w-1/2 grid grid-cols-2 place-items-center  p-40">
-          <p className=" text-3xl text-base font-black text-transper cursor-pointer tracking-wider hover:text-white">
+        <div className="w-1/2  grid grid-col-2 place-items-center">
+          <p className="cursor-pointer text-transper hover:text-white font-black">
             VISSION
           </p>
-          <p className="p-6 text-3xl text-base font-black text-transper cursor-pointer tracking-wider hover:text-white">
+          <p className="cursor-pointer text-transper hover:text-white font-black">
             MISSION
           </p>
         </div>

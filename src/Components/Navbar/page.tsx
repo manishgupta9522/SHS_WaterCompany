@@ -14,7 +14,7 @@ const Page = () => {
         <div className="ml-20">
           <img src="uniq-space-logo.svg" alt="logo" width="200px" />
         </div>
-        <div className="hidden lg:inline-flex font-black text-bluegrey cursor-pointer grid grid-cols-1 sm:grid-cols-4 lg:grid-cols-4 gap-8 pr-20 mt-3 ">
+        <div className="hidden lg:inline-flex font-black text-bluegrey cursor-pointer grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-8 pr-20 mt-3 ">
           <ul className="hover:text-darkblue hover:cursor-pointer">HOME</ul>
           <ul className="hover:text-darkblue hover:cursor-pointer">ABOUT US</ul>
           <ul className="hover:text-darkblue hover:cursor-pointer">PRODUCTS</ul>
