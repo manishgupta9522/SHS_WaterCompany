@@ -37,7 +37,7 @@ const Page = () => {
   }, []);
 
   return (
-    <div className="images m-2 p-3 ">
+    <div className="images m-2 p-3 m-[100px] ">
       <div className="logos max-w-full overflow-hidden " ref={logosRef}>
         <div className="logos-slide flex gap-4 animate-infinite_scroll">
           {images.map((logo, index) => {

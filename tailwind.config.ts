@@ -8,6 +8,14 @@ const config: Config = {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    screens: {
+      ssm: "350px",
+      sm: "640px",
+      md: "768px",
+      lg: "1024px",
+      xl: "1280px",
+      "2xl": "1536px",
+    },
     extend: {
       keyframes: {
         infinite_scroll: {
@@ -26,6 +34,9 @@ const config: Config = {
         darkblue: "#243445",
         transper: "rgba(255, 255, 255, 0.3)",
         bg: "#f2f2f2",
+        text: "#333",
+        button: "#fff",
+        bgbutton: "#243445",
       },
     },
   },

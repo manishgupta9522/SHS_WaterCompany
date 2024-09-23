@@ -8,8 +8,16 @@ const Page = () => {
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
+
+  const scrollToContact = () => {
+    const contactSection = document.getElementById("contact-us");
+    if (contactSection) {
+      contactSection.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
-    <header className="w-full bg-headerYellow sticky top-0 bg-white shadow-md z-50">
+    <header className="w-full bg-header Yellow sticky top-0 bg-white shadow-md z-50">
       <div className="flex flex-row justify-between p-4">
         <div className="ml-20">
           <img src="uniq-space-logo.svg" alt="logo" width="200px" />
@@ -18,7 +26,10 @@ const Page = () => {
           <ul className="hover:text-darkblue hover:cursor-pointer">HOME</ul>
           <ul className="hover:text-darkblue hover:cursor-pointer">ABOUT US</ul>
           <ul className="hover:text-darkblue hover:cursor-pointer">PRODUCTS</ul>
-          <ul className="hover:text-darkblue hover:cursor-pointer">
+          <ul
+            className="hover:text-darkblue hover:cursor-pointer"
+            onClick={scrollToContact}
+          >
             CONTACT US
           </ul>
         </div>
