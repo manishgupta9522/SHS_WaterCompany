@@ -3,17 +3,22 @@ import React, { useEffect, useRef } from "react";
 
 const Page = () => {
   const images = [
-    { src: "i-1.png", text: "Free Qoute" },
-    { src: "i-2.png", text: "Designing" },
-    { src: "i-3.png", text: "Site Measurement" },
-    { src: "i-4.png", text: "Budget Planning" },
-    { src: "i-5.png", text: "Design Concept" },
-    { src: "i-6.png", text: "Project Management" },
-    { src: "i-7.png", text: "Wall Designs & Painting" },
-    { src: "i-8.png", text: " Electrical & Plumbing Work" },
-    { src: "i-9.png", text: " On-Site Carpentry" },
-    { src: "i-10.png", text: " Soft Furnishing" },
+    { src: "i-1.png" },
+    { src: "i-2.jpg" },
+    { src: "i-3.png" },
+    { src: "i-4.png" },
+    { src: "i-5.jpg" },
+    { src: "i-6.jpg" },
+    { src: "i-7.jpg" },
+    { src: "i-8.jpg" },
+    { src: "i-9.png" },
+    { src: "i-10.jpg" },
+    { src: "i-11.jpg" },
+    { src: "i-12.jpg" },
+    { src: "i-13.jpg" },
+    { src: "i-14.jpg" },
   ];
+
   const logosRef = useRef<HTMLDivElement | null>(null);
 
   useEffect(() => {
@@ -37,14 +42,13 @@ const Page = () => {
   }, []);
 
   return (
-    <div className="images m-2 p-3 m-[100px] ">
+    <div className="ml-20 mr-20 h-[200px] p-[20px]">
       <div className="logos max-w-full overflow-hidden " ref={logosRef}>
-        <div className="logos-slide flex gap-4 animate-infinite_scroll">
+        <div className="logos-slide flex gap-4 object-fill animate-infinite_scroll">
           {images.map((logo, index) => {
             return (
-              <div className="flex items-center gap-2 shrink-0" key={index}>
+              <div className="flex items-center  shrink-0" key={index}>
                 <img src={logo.src} alt="logo" className="w-auto h-20" />
-                <p>{logo.text}</p>
               </div>
             );
           })}

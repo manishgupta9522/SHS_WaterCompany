@@ -1,4 +1,5 @@
 "use client";
+import Link from "next/link";
 import { useState } from "react";
 import { FiMenu } from "react-icons/fi";
 
@@ -9,28 +10,24 @@ const Page = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
-  const scrollToContact = () => {
-    const contactSection = document.getElementById("contact-us");
-    if (contactSection) {
-      contactSection.scrollIntoView({ behavior: "smooth" });
-    }
-  };
-
   return (
-    <header className="w-full bg-header Yellow sticky top-0 bg-white shadow-md z-50">
+    <header className="w-full bg-headerYellow fixed top-0 shadow-md z-50 h-[10vh]">
       <div className="flex flex-row justify-between p-4">
         <div className="ml-20">
           <img src="uniq-space-logo.svg" alt="logo" width="200px" />
         </div>
         <div className="hidden lg:inline-flex font-black text-bluegrey cursor-pointer grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-8 pr-20 mt-3 ">
-          <ul className="hover:text-darkblue hover:cursor-pointer">HOME</ul>
-          <ul className="hover:text-darkblue hover:cursor-pointer">ABOUT US</ul>
-          <ul className="hover:text-darkblue hover:cursor-pointer">PRODUCTS</ul>
-          <ul
-            className="hover:text-darkblue hover:cursor-pointer"
-            onClick={scrollToContact}
-          >
-            CONTACT US
+          <ul className="hover:text-darkblue hover:cursor-pointer">
+            <Link href="#home">HOME</Link>
+          </ul>
+          <ul className="hover:text-darkblue hover:cursor-pointer">
+            <Link href="#who-we-are">ABOUT US</Link>
+          </ul>
+          <ul className="hover:text-darkblue hover:cursor-pointer">
+            <Link href="#what-we-do">PRODUCTS</Link>
+          </ul>
+          <ul className="hover:text-darkblue hover:cursor-pointer">
+            <Link href="#contact-us">CONTACT US</Link>
           </ul>
         </div>
         <div className="inline-flex lg:hidden">

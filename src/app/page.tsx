@@ -3,6 +3,7 @@ import AnimationVideo from "@/Components/AnimationVideo/page";
 import WhoWeAre from "@/Components/WhoWeAre/page";
 import Scroller from "@/Components/Scroller/page";
 import GetInTouch from "@/Components/GetInTouch/page";
+import WhatWeDo from "@/Components/WhatWeDo/page";
 import "tailwindcss/tailwind.css";
 
 export default function Home() {
@@ -12,6 +13,7 @@ export default function Home() {
       <AnimationVideo />
       <WhoWeAre />
       <Scroller />
+      <WhatWeDo />
       <GetInTouch />
     </>
   );

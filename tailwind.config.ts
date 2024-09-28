@@ -19,11 +19,12 @@ const config: Config = {
     extend: {
       keyframes: {
         infinite_scroll: {
-          "100%": { transform: "translateX(calc(-50% - 0.5rem))" },
+          "0%": { transform: "translateX(0)" },
+          "100%": { transform: "translateX(-100%)" },
         },
       },
       animation: {
-        infinite_scroll: "infinite_scroll 10s linear infinite",
+        infinite_scroll: "infinite_scroll 12s linear infinite",
       },
       colors: {
         background: "var(--background)",

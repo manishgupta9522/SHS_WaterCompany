@@ -2,8 +2,8 @@ import React from "react";
 
 const page = () => {
   return (
-    <div>
-      <div className="relative w-full h-[540px]">
+    <div id="home" className="pt-[10vh] mt-[-10vh]">
+      <div className="relative w-full h-[100vh]">
         <img
           src="water.gif"
           alt="logo"
