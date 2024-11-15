@@ -1,0 +1,15 @@
+/* Add this to your global styles */
+.scrollbar-hidden {
+  /* For Webkit browsers (Chrome, Safari) */
+  &::-webkit-scrollbar {
+    display: none; /* Hide the scrollbar */
+  }
+
+  /* For Firefox */
+  scrollbar-width: none; /* Hide scrollbar for Firefox */
+}
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}

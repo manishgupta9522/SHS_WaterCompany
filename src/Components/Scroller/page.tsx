@@ -33,7 +33,6 @@ const Page = () => {
       innerlogosChildren.forEach((item) => {
         const extendedLogos = item.cloneNode(true) as HTMLElement;
         innerlogos.appendChild(extendedLogos);
-        console.log("entered");
       });
       innerlogos.setAttribute("data-cloned", "true");
     };
@@ -42,7 +41,7 @@ const Page = () => {
   }, []);
 
   return (
-    <div className="ml-20 mr-20 h-[200px] p-[20px]">
+    <div className="ml-20 mr-20 xs:ml-5 xs:mr-5 h-[200px] p-[20px]">
       <div className="logos max-w-full overflow-hidden " ref={logosRef}>
         <div className="logos-slide flex gap-4 object-fill animate-infinite_scroll">
           {images.map((logo, index) => {

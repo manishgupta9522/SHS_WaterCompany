@@ -5,48 +5,57 @@ const page = () => {
   return (
     <>
       <div
+        className="h-[100vh] bg-neutral-50 sm:p-[2vh] md:p-[5vh] xl:p-[10vh] 2xl:p-[10vh]  mt-[-10vh] flex justify-center items-center"
         id="what-we-do"
-        className="h-[100vh] bg-neutral-50 p-[20vh] mt-[-10vh]"
       >
-        <div className="h-[500px] bg-yellow-400">
-          <div className="flex justify-between">
-            <div className="font-bold pl-10 pt-10 text-4xl">WHAT WE DO</div>
-            <div className="font-bold pr-[195px] pt-20 text-2xl">
+        <div className="w-full  bg-yellow-400 h-[500px] xxs:h-[650px] xxs:grid-cols-1 xs:h-[650px] grid md:grid-cols-2 xl:grid-cols-2 xs:grid-cols-1 justify-center pt-20 xxs:pt-10">
+          <div className="xs:h-[200px]">
+            <div className="pl-20 text-4xl xxs:text-2xl font-bold">
+              What We Do
+            </div>
+            <div className="text-sm w-full sm:text-base md:text-lg lg:text-xl xs:p-[30px] md:p-20 lg:p-20 xl:pt-[120px] flex items-center">
+              {" "}
+              SHS provides turn-key water treatment solutions for various
+              industrial and commercial applications. Our solutions include:
+              <br />
+              -------------------------------------------------------------
+              -------------------------------------------------------------
+              -------------------------------------------------------------
+              -------------------------------------------------------------
+            </div>
+          </div>
+          <div>
+            <div className="flex justify-center items-center text-2xl xxs:text-xl font-bold ">
               Our Applications
             </div>
-          </div>
-
-          <div className="grid grid-cols-2 items-center p-10">
-            <div className="">
-              SHS provides turn-key water treatment solutions Our Applications
-              For various industrial and commercial applications.
-              -------------------------------------------------------------
-              -------------------------------------------------------------
-              -------------------------------------------------------------
-              -------------------------------------------------------------
-              -------------------------------------------------------------
-              -------------------------------------------------------------
+            <div className="flex justify-center items-center xs:pt-[10px] md:pt-[70px] lg:pt-[70px] xl:pt-[70px] xxs:text-sm">
+              <div className="grid grid-cols-2 gap-4 ">
+                {[
+                  "RO",
+                  "UF",
+                  "UV",
+                  "Pre-Fil",
+                  "STP",
+                  "DM/DI",
+                  "MB",
+                  "EDI",
+                  "PDS",
+                  "Softner",
+                ].map((item) => (
+                  <ul key={item} className="hover:text-bluegrey cursor-pointer">
+                    {item}
+                  </ul>
+                ))}
+              </div>
             </div>
-            <div className="grid grid-cols-2 gap-5 justify-items-center font-black ">
-              <ul className="hover:text-bluegrey cursor-pointer">RO</ul>
-              <ul className="hover:text-bluegrey cursor-pointer">UF</ul>
-              <ul className="hover:text-bluegrey cursor-pointer">UV</ul>
-              <ul className="hover:text-bluegrey cursor-pointer">Pre-Fil</ul>
-              <ul className="hover:text-bluegrey cursor-pointer">STP</ul>
-              <ul className="hover:text-bluegrey cursor-pointer">DM/DI</ul>
-              <ul className="hover:text-bluegrey cursor-pointer">MB</ul>
-              <ul className="hover:text-bluegrey cursor-pointer">EDI</ul>
-              <ul className="hover:text-bluegrey cursor-pointer">PDS</ul>
-              <ul className="hover:text-bluegrey cursor-pointer">Softner</ul>
+            <div className="flex mt-20 xxs:mt-1 xs:mt-5 md:mt-[50px] lg:mt-[50px] xl:mt-[50px] justify-center">
+              <Link
+                href="/work"
+                className="hover:text-bluegrey cursor-pointer underline font-bold"
+              >
+                What We Do (Our Images)
+              </Link>
             </div>
-          </div>
-          <div className="grid justify-items-end mr-[190px] mt-5 ">
-            <Link
-              href="/work"
-              className="hover:text-bluegrey cursor-pointer underline font-bold"
-            >
-              What We Do (Our Images)
-            </Link>
           </div>
         </div>
       </div>

@@ -4,7 +4,7 @@ const page = () => {
   return (
     <div
       id="contact-us"
-      className="max-w-full bg-slate-50 rounded pt-[10vh] mt-[-10vh] "
+      className="w-[100%] bg-slate-50 rounded pt-[10vh] mt-[-10vh] "
     >
       <div className="grid justify-items-center  mr-auto ml-auto pt-[30px]">
         <div className="header lg:text-5xl font-bold text-text ssm:text-3xl">

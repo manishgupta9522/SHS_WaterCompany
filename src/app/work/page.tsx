@@ -3,7 +3,7 @@ import React from "react";
 const page = () => {
   return (
     <>
-      <div className="grid grid-cols-3 m-3 gap-5">
+      <div className="grid xl:grid-cols-3 lg:grid-cols-3 md:grid-cols-3 sm:grid-cols-2 xs:grid-cols-2 m-3 gap-10">
         <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-slate-800 dark:border-gray-700">
           <a href="#">
             <img className="rounded-t-lg" src="image-1.jpg" alt="logo" />

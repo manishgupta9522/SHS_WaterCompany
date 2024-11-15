@@ -2,7 +2,7 @@ import React from "react";
 
 const page = () => {
   return (
-    <div id="home" className="pt-[10vh] mt-[-10vh]">
+    <div id="home" className=" w-full pt-[10vh] mt-[-10vh]">
       <div className="relative w-full h-[100vh]">
         <img
           src="water.gif"
